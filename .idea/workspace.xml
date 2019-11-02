@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635aec84-b09b-48cd-a852-223cfcffbbd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jdom_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Serializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,15 @@
   </component>
   <component name="ProjectId" id="1Su70RwbifnR9l85CMVKeTeqaef" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jdom-2.0.6" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -80,9 +92,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ObjectCreator.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/Serializer.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Serializer.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

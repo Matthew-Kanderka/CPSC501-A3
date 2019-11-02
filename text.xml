@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serialized>
+  <object class="[I" id="1" />
+  <object class="ObjectC" id="0">
+    <field name="numberList" declaringClass="ObjectC">
+      <reference>1</reference>
+    </field>
+  </object>
+</serialized>

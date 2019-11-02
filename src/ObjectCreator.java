@@ -1,3 +1,9 @@
+import org.jdom2.Document;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
+
+import java.io.FileWriter;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,8 +13,7 @@ public class ObjectCreator {
     private static List<Object> objectList = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         System.out.println("-- Actions --");
         System.out.println("Select an option: \n" +
                 "1) Create Simple Object\n" +
@@ -33,16 +38,24 @@ public class ObjectCreator {
                 obj = createObjectArrayObject();
             } else if (selection.equals("5")) {
                 obj = createCollectionObject();
-            } else if (selection.equals("quit")) {
+            } else if (selection.equals("q")) {
                 break;
-            } else {
-                System.err.println("Please give a valid input");
             }
-            
-            objectList.add(obj);
+
+            if (obj != null) {
+                objectList.add(obj);
+            }
         }
 
         System.out.println("Time to cereal");
+        Serializer serializer = new Serializer();
+        Document document = serializer.serialize(objectList);
+
+        try {
+            new XMLOutputter(Format.getPrettyFormat()).output(document, new FileWriter("text.xml"));
+        } catch (Exception e) {
+
+        }
     }
 
     private static ObjectA createSimpleObject() {
