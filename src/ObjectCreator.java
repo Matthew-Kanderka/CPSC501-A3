@@ -38,7 +38,7 @@ public class ObjectCreator {
                 obj = createObjectArrayObject();
             } else if (selection.equals("5")) {
                 obj = createCollectionObject();
-            } else if (selection.equals("q")) {
+            } else if (selection.equals("exit")) {
                 break;
             }
 

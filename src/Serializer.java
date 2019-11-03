@@ -2,6 +2,7 @@ import org.jdom2.Attribute;
 import org.jdom2.Document;
 import org.jdom2.Element;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -42,32 +43,62 @@ public class Serializer {
         objectElement.setAttribute(new Attribute("class", objectToSerialize.getClass().getName()));
         objectElement.setAttribute(new Attribute("id", id.toString()));
 
-        Field[] fields = objectToSerialize.getClass().getDeclaredFields();
-        for (Field f : fields) {
-            f.setAccessible(true);
-            String fieldName = f.getName();
-            String fieldDeclaringClass = f.getDeclaringClass().getName();
+        if (objectToSerialize.getClass().isArray()) {
+            objectElement = serializeArray(objectToSerialize);
+        } else {
 
-            Element fieldElement = new Element("field");
-            fieldElement.setAttribute(new Attribute("name",fieldName));
-            fieldElement.setAttribute(new Attribute("declaringClass", fieldDeclaringClass));
+            Field[] fields = objectToSerialize.getClass().getDeclaredFields();
+            for (Field f : fields) {
+                f.setAccessible(true);
+                String fieldName = f.getName();
+                String fieldDeclaringClass = f.getDeclaringClass().getName();
 
-            Object value = f.get(objectToSerialize);
+                Element fieldElement = new Element("field");
+                fieldElement.setAttribute(new Attribute("name", fieldName));
+                fieldElement.setAttribute(new Attribute("declaringClass", fieldDeclaringClass));
 
-            if (f.getType().isPrimitive()) {
-                Element valueElement = new Element("value");
-                valueElement.setText(value.toString());
-                fieldElement.addContent(valueElement);
-            } else {
-                Element referenceElement = new Element("reference");
-                referenceElement.setText(getId(value).toString());
-                fieldElement.addContent(referenceElement);
-                serObject(value);
+                Object value = f.get(objectToSerialize);
+
+                if (f.getType().isPrimitive()) {
+                    Element valueElement = new Element("value");
+                    valueElement.setText(value.toString());
+                    fieldElement.addContent(valueElement);
+                } else {
+                    Element referenceElement = new Element("reference");
+                    referenceElement.setText(getId(value).toString());
+                    fieldElement.addContent(referenceElement);
+                    serObject(value);
+                }
+                objectElement.addContent(fieldElement);
             }
-            objectElement.addContent(fieldElement);
         }
 
         document.getRootElement().addContent(objectElement);
+    }
+
+    public Element serializeArray(Object arrayObject) throws IllegalAccessException {
+        Element objectElement = new Element("object");
+        objectElement.setAttribute(new Attribute("class", arrayObject.getClass().getName()));
+        objectElement.setAttribute(new Attribute("id", getId(arrayObject).toString()));
+        objectElement.setAttribute(new Attribute("length", Integer.toString(Array.getLength(arrayObject))));
+
+        Class type = arrayObject.getClass().getComponentType();
+
+        for (int i = 0; i < Array.getLength(arrayObject); i++) {
+
+            if (type.isPrimitive()) {
+                Element valueElement = new Element("value");
+                valueElement.setText( Array.get(arrayObject, i).toString());
+                objectElement.addContent(valueElement);
+            } else {
+                Element referenceElement = new Element("reference");
+                referenceElement.setText(getId(Array.get(arrayObject, i)).toString());
+                objectElement.addContent(referenceElement);
+                serObject(Array.get(arrayObject, i));
+            }
+        }
+
+        return objectElement;
     }
 
     public Integer getId(Object obj) {
