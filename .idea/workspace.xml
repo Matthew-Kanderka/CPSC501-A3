@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635aec84-b09b-48cd-a852-223cfcffbbd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Deserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Deserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Deserializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Receiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CPSC501-A3-master/CPSC501-A3-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CPSC501-A3-master (2)/CPSC501-A3-master" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -100,17 +107,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Deserializer.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/A3$ObjectCreator.ic" NAME="ObjectCreator Coverage Results" MODIFIED="1572743913861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

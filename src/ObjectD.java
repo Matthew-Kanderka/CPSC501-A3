@@ -2,6 +2,8 @@ public class ObjectD {
 
     private ObjectA[] objectAList;
 
+    public ObjectD() {}
+
     public ObjectD(int length) {
         objectAList = new ObjectA[length];
     }
