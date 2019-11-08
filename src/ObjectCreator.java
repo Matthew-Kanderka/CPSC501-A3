@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ObjectCreator {
 
     private static List<Object> objectList = new ArrayList<>();
-    private static Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public List<Object> create() {
         System.out.println("-- Actions --");
@@ -44,7 +44,7 @@ public class ObjectCreator {
         return objectList;
     }
 
-    private static ObjectA createSimpleObject() {
+    public ObjectA createSimpleObject() {
         int userInputX;
         int userInputY;
 
@@ -58,13 +58,13 @@ public class ObjectCreator {
         return new ObjectA(userInputX, userInputY);
     }
 
-    private static ObjectB createReferenceObject() {
+    public ObjectB createReferenceObject() {
         System.out.println("Creating reference object...");
         ObjectA userObjectA = createSimpleObject();
         return new ObjectB(userObjectA);
     }
 
-    private static ObjectC createPrimitiveObject() {
+    public ObjectC createPrimitiveObject() {
         int[] userList;
         int userInt;
         int size;
@@ -84,7 +84,7 @@ public class ObjectCreator {
         return new ObjectC(userList);
     }
 
-    private static ObjectD createObjectArrayObject() {
+    public ObjectD createObjectArrayObject() {
         int arraySize;
 
         System.out.println("Creating array of objects object:");
@@ -100,7 +100,7 @@ public class ObjectCreator {
         return objD;
     }
 
-    private static ObjectE createCollectionObject() {
+    public ObjectE createCollectionObject() {
         ObjectE objE = new ObjectE();
 
         System.out.println("Creating collection of objects");

@@ -11,4 +11,8 @@ public class ObjectD {
     public void setElement(int item, ObjectA objectA) {
         objectAList[item] = objectA;
     }
+
+    public ObjectA[] getObjectAList() {
+        return objectAList;
+    }
 }

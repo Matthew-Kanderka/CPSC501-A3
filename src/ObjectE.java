@@ -11,4 +11,8 @@ public class ObjectE {
     public void addObject(ObjectA objectA) {
         objectAArrayList.add(objectA);
     }
+
+    public ArrayList<ObjectA> getObjectAArrayList() {
+        return objectAArrayList;
+    }
 }

@@ -7,4 +7,8 @@ public class ObjectC {
     public ObjectC(int[] list) {
         numberList = list;
     }
+
+    public int[] getNumberList() {
+        return numberList;
+    }
 }
