@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="635aec84-b09b-48cd-a852-223cfcffbbd9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReceived.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fileReceived.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Deserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Deserializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/DeserializerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/DeserializerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Receiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Sender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Serializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Visualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Visualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeserializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeserializerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Serializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SerializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SerializerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visualizer.java" afterDir="false" />
-    </list>
+    <list default="true" id="635aec84-b09b-48cd-a852-223cfcffbbd9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,11 +135,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Serializer.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Receiver.java</url>
           <line>40</line>

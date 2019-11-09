@@ -4,7 +4,6 @@ import org.jdom2.Element;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.util.IdentityHashMap;
 
 public class Serializer {
@@ -13,7 +12,7 @@ public class Serializer {
     private Integer id = 0;
     private Document document;
 
-    public Document serialize(Object object) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+    public Document serialize(Object object) throws IllegalAccessException {
 
         document = new Document();
         document.setRootElement(new Element("serialized"));
