@@ -3,17 +3,13 @@ import org.jdom2.Element;
 import org.junit.Test;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class SerializerTest {
 
     @Test
     public void testSerialize_ObjectA() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Serializer serializer = new Serializer();
-        List<Object> objects = new ArrayList<>();
-        objects.add(new ObjectA(4,6));
-        Document document = serializer.serialize(objects);
+        Document document = serializer.serialize(new ObjectA(4,6));
 
         assert document != null;
         assert document.getRootElement().getName().equals("serialized");
@@ -30,10 +26,8 @@ public class SerializerTest {
     @Test
     public void testSerialize_ObjectB() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Serializer serializer = new Serializer();
-        List<Object> objects = new ArrayList<>();
         ObjectB objectB = new ObjectB(new ObjectA(4,6));
-        objects.add(objectB);
-        Document document = serializer.serialize(objects);
+        Document document = serializer.serialize(objectB);
 
         assert document != null;
         assert document.getRootElement().getName().equals("serialized");
@@ -59,10 +53,8 @@ public class SerializerTest {
     @Test
     public void testSerialize_ObjectC() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Serializer serializer = new Serializer();
-        List<Object> objects = new ArrayList<>();
         ObjectC objectC = new ObjectC(new int[]{1,2,3});
-        objects.add(objectC);
-        Document document = serializer.serialize(objects);
+        Document document = serializer.serialize(objectC);
 
         assert document != null;
         assert document.getRootElement().getName().equals("serialized");

@@ -14,7 +14,6 @@ public class Visualizer {
 
         formattedPrint("Class Name: " + c.getName(), depth);
 
-        getSuperClassInfo(c, obj, recursive, depth);
         getConstructorInfo(c, obj, depth);
         getFieldInfo(c, obj, recursive, depth);
     }

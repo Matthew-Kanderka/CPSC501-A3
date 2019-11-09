@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635aec84-b09b-48cd-a852-223cfcffbbd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_13_rc_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objectA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DeserializerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ObjectCreatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SerializerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileReceived.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fileReceived.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileSent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Deserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Deserializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/DeserializerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/DeserializerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ObjectE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ObjectE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Receiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Sender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Serializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Visualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Visualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeserializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeserializerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SerializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SerializerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visualizer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="211" />
+    <option name="myElementSize" value="220" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hamcrest-core-1.3.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CPSC501-A3-master (3)/CPSC501-A3-master" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,14 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeserializerTest">
-    <configuration name="Receiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Receiver" />
-      <module name="A3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObjectCreatorTest">
     <configuration name="Sender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sender" />
       <module name="A3" />
@@ -91,40 +79,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeserializerTest.testDeserialize_ObjectB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ObjectCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeserializerTest" />
-      <option name="METHOD_NAME" value="testDeserialize_ObjectB" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ObjectCreatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeserializerTest.testDeserialize_ObjectC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SerializerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeserializerTest" />
-      <option name="METHOD_NAME" value="testDeserialize_ObjectC" />
+      <option name="MAIN_CLASS_NAME" value="SerializerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SerializerTest.testSerialize_ObjectA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SerializerTest" />
+      <option name="METHOD_NAME" value="testSerialize_ObjectA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Receiver" />
       <item itemvalue="Application.Sender" />
-      <item itemvalue="JUnit.DeserializerTest.testDeserialize_ObjectB" />
-      <item itemvalue="JUnit.DeserializerTest.testDeserialize_ObjectC" />
       <item itemvalue="JUnit.DeserializerTest" />
+      <item itemvalue="JUnit.ObjectCreatorTest" />
+      <item itemvalue="JUnit.SerializerTest" />
+      <item itemvalue="JUnit.SerializerTest.testSerialize_ObjectA" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ObjectCreatorTest" />
+        <item itemvalue="JUnit.SerializerTest" />
+        <item itemvalue="JUnit.SerializerTest.testSerialize_ObjectA" />
         <item itemvalue="JUnit.DeserializerTest" />
-        <item itemvalue="JUnit.DeserializerTest.testDeserialize_ObjectC" />
         <item itemvalue="Application.Sender" />
-        <item itemvalue="Application.Receiver" />
-        <item itemvalue="JUnit.DeserializerTest.testDeserialize_ObjectB" />
       </list>
     </recent_temporary>
   </component>
@@ -158,24 +154,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ObjectCreator.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="52" />
+          <url>file://$PROJECT_DIR$/src/Serializer.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ObjectCreator.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="54" />
+          <url>file://$PROJECT_DIR$/src/Receiver.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ObjectCreator.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ObjectCreator.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="67" />
+          <url>file://$PROJECT_DIR$/src/SerializerTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -188,7 +179,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/A3$SerializerTest.ic" NAME="SerializerTest Coverage Results" MODIFIED="1573175580460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/A3$DeserializerTest.ic" NAME="DeserializerTest Coverage Results" MODIFIED="1573178408880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/A3$DeserializerTest.ic" NAME="DeserializerTest Coverage Results" MODIFIED="1573322651763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/A3$ObjectCreator.ic" NAME="ObjectCreator Coverage Results" MODIFIED="1572743913861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/A3$ObjectCreatorTest.ic" NAME="ObjectCreatorTest Coverage Results" MODIFIED="1573101899051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>

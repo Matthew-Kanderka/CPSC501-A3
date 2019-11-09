@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 public class DeserializerTest {
 
     @Test
-    public void testDeserialize_ObjectA() throws JDOMException, IOException, ClassNotFoundException, NoSuchFieldException, InstantiationException, IllegalAccessException {
+    public void testDeserialize_ObjectA() throws Exception {
         Document objectADocument = readFile("D:\\UofC\\4th-year\\CPSC501\\A3\\objectA.xml");
 
         Deserializer deserializer = new Deserializer();
@@ -29,7 +29,7 @@ public class DeserializerTest {
     }
 
     @Test
-    public void testDeserialize_ObjectB() throws JDOMException, IOException, ClassNotFoundException, NoSuchFieldException, InstantiationException, IllegalAccessException {
+    public void testDeserialize_ObjectB() throws Exception {
         Document objectBDocument = readFile("D:\\UofC\\4th-year\\CPSC501\\A3\\objectB.xml");
 
         Deserializer deserializer = new Deserializer();
@@ -52,7 +52,7 @@ public class DeserializerTest {
     }
 
     @Test
-    public void testDeserialize_ObjectC() throws JDOMException, IOException, ClassNotFoundException, NoSuchFieldException, InstantiationException, IllegalAccessException {
+    public void testDeserialize_ObjectC() throws Exception {
         Document objectCDocument = readFile("D:\\UofC\\4th-year\\CPSC501\\A3\\objectC.xml");
 
         Deserializer deserializer = new Deserializer();

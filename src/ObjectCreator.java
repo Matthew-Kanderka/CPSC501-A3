@@ -1,13 +1,29 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ObjectCreator {
 
-    private static List<Object> objectList = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
-    public List<Object> create() {
+    public Object create(String selection) {
+
+        Object obj = null;
+
+        if (selection.equals("1")) {
+            obj = createSimpleObject();
+        } else if (selection.equals("2")) {
+            obj = createReferenceObject();
+        } else if (selection.equals("3")) {
+            obj = createPrimitiveObject();
+        } else if (selection.equals("4")) {
+            obj = createObjectArrayObject();
+        } else if (selection.equals("5")) {
+            obj = createCollectionObject();
+        }
+
+        return obj;
+    }
+
+    public void printMenu() {
         System.out.println("-- Actions --");
         System.out.println("Select an option: \n" +
                 "1) Create Simple Object\n" +
@@ -15,33 +31,7 @@ public class ObjectCreator {
                 "3) Create Primitive Array Object\n" +
                 "4) Create Object Array Object\n" +
                 "5) Create Collection Object\n" +
-                "6) To quit");
-
-        String selection;
-
-        while((selection = scanner.nextLine()) != null) {
-            Object obj = null;
-
-            if (selection.equals("1")) {
-                obj = createSimpleObject();
-            } else if (selection.equals("2")) {
-                obj = createReferenceObject();
-            } else if (selection.equals("3")) {
-                obj = createPrimitiveObject();
-            } else if (selection.equals("4")) {
-                obj = createObjectArrayObject();
-            } else if (selection.equals("5")) {
-                obj = createCollectionObject();
-            } else if (selection.equals("6")) {
-                break;
-            }
-
-            if (obj != null) {
-                objectList.add(obj);
-            }
-        }
-
-        return objectList;
+                "--- 'quit' to stop");
     }
 
     public ObjectA createSimpleObject() {

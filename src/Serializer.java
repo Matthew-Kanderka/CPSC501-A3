@@ -20,18 +20,18 @@ public class Serializer {
         document = new Document();
         document.setRootElement(new Element("serialized"));
 
-        Class cls = object.getClass();
-        Class[] noparams = {};
-        Method method = cls.getDeclaredMethod("size", noparams);
-        Object size = method.invoke(object, (Object[]) null);
+//        Class cls = object.getClass();
+//        Class[] noparams = {};
+//        Method method = cls.getDeclaredMethod("size", noparams);
+//        Object size = method.invoke(object, (Object[]) null);
 
-        for (int i = 0; i < Integer.parseInt(size.toString()); i++) {
-            Method get = List.class.getDeclaredMethod("get", int.class);
-            get.invoke(object, i);
-            Object objectToSerialize = get.invoke(object, i);
-            serObject(objectToSerialize);
-        }
-
+//        for (int i = 0; i < Integer.parseInt(size.toString()); i++) {
+//            Method get = List.class.getDeclaredMethod("get", int.class);
+//            get.invoke(object, i);
+//            Object objectToSerialize = get.invoke(object, i);
+//            serObject(objectToSerialize);
+//        }
+        serObject(object);
         return document;
     }
 
@@ -39,9 +39,7 @@ public class Serializer {
 
         Integer id = getId(objectToSerialize);
 
-        Element objectElement = new Element("object");
-        objectElement.setAttribute(new Attribute("class", objectToSerialize.getClass().getName()));
-        objectElement.setAttribute(new Attribute("id", id.toString()));
+        Element objectElement = createObjectElement(objectToSerialize, id);
 
         if (objectToSerialize.getClass().isArray()) {
             objectElement = serializeArray(objectToSerialize);
@@ -50,22 +48,16 @@ public class Serializer {
             Field[] fields = objectToSerialize.getClass().getDeclaredFields();
             for (Field f : fields) {
                 f.setAccessible(true);
-                String fieldName = f.getName();
-                String fieldDeclaringClass = f.getDeclaringClass().getName();
 
-                Element fieldElement = new Element("field");
-                fieldElement.setAttribute(new Attribute("name", fieldName));
-                fieldElement.setAttribute(new Attribute("declaringClass", fieldDeclaringClass));
+                Element fieldElement = createFieldElement(f);
 
                 Object value = f.get(objectToSerialize);
 
                 if (f.getType().isPrimitive()) {
-                    Element valueElement = new Element("value");
-                    valueElement.setText(value.toString());
-                    fieldElement.addContent(valueElement);
+                    Element element = createValueElement(value);
+                    fieldElement.addContent(element);
                 } else {
-                    Element referenceElement = new Element("reference");
-                    referenceElement.setText(getId(value).toString());
+                    Element referenceElement = createReferenceElement(getId(value).toString());
                     fieldElement.addContent(referenceElement);
                     serObject(value);
                 }
@@ -77,22 +69,21 @@ public class Serializer {
     }
 
     public Element serializeArray(Object arrayObject) throws IllegalAccessException {
-        Element objectElement = new Element("object");
-        objectElement.setAttribute(new Attribute("class", arrayObject.getClass().getName()));
-        objectElement.setAttribute(new Attribute("id", getId(arrayObject).toString()));
-        objectElement.setAttribute(new Attribute("length", Integer.toString(Array.getLength(arrayObject))));
+
+        Element objectElement = createObjectArrayElement(arrayObject, getId(arrayObject));
 
         Class type = arrayObject.getClass().getComponentType();
 
         for (int i = 0; i < Array.getLength(arrayObject); i++) {
 
-            if (type.isPrimitive()) {
-                Element valueElement = new Element("value");
-                valueElement.setText( Array.get(arrayObject, i).toString());
+            if (Array.get(arrayObject, i) == null) {
+                Element nullElement = createValueElement(null);
+                objectElement.addContent(nullElement);
+            } else if (type.isPrimitive()) {
+                Element valueElement = createValueElement(Array.get(arrayObject, i));
                 objectElement.addContent(valueElement);
             } else {
-                Element referenceElement = new Element("reference");
-                referenceElement.setText(getId(Array.get(arrayObject, i)).toString());
+                Element referenceElement = createReferenceElement(getId(Array.get(arrayObject, i)).toString());
                 objectElement.addContent(referenceElement);
                 serObject(Array.get(arrayObject, i));
             }
@@ -101,7 +92,7 @@ public class Serializer {
         return objectElement;
     }
 
-    public Integer getId(Object obj) {
+    private Integer getId(Object obj) {
         int objectId = id;
 
         if (ihm.containsKey(obj)) {
@@ -111,5 +102,43 @@ public class Serializer {
             id++;
         }
         return objectId;
+    }
+
+    private Element createObjectElement(Object obj, Integer id) {
+        Element objectElement = new Element("object");
+        objectElement.setAttribute(new Attribute("class", obj.getClass().getName()));
+        objectElement.setAttribute(new Attribute("id", id.toString()));
+        return objectElement;
+    }
+
+    private Element createObjectArrayElement(Object obj, Integer id) {
+        Element objectElement = new Element("object");
+        objectElement.setAttribute(new Attribute("class", obj.getClass().getName()));
+        objectElement.setAttribute(new Attribute("id", id.toString()));
+        objectElement.setAttribute(new Attribute("length", Integer.toString(Array.getLength(obj))));
+        return objectElement;
+    }
+
+    private Element createFieldElement(Field field) {
+        Element fieldElement = new Element("field");
+        fieldElement.setAttribute(new Attribute("name", field.getName()));
+        fieldElement.setAttribute(new Attribute("declaringClass", field.getDeclaringClass().getName()));
+        return fieldElement;
+    }
+
+    private Element createValueElement(Object valueObj) {
+        Element valueElement = new Element("value");
+        if (valueObj == null) {
+            valueElement.setText("null");
+        } else {
+            valueElement.setText(valueObj.toString());
+        }
+        return valueElement;
+    }
+
+    private Element createReferenceElement(String id) {
+        Element referenceElement = new Element("reference");
+        referenceElement.setText(id);
+        return referenceElement;
     }
 }
