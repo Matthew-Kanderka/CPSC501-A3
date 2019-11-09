@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serialized>
+  <object class="ObjectA" id="1">
+    <field name="x" declaringClass="ObjectA">
+      <value>4</value>
+    </field>
+    <field name="y" declaringClass="ObjectA">
+      <value>3</value>
+    </field>
+  </object>
+  <object class="ObjectB" id="0">
+    <field name="objectA" declaringClass="ObjectB">
+      <reference>1</reference>
+    </field>
+  </object>
+</serialized>
