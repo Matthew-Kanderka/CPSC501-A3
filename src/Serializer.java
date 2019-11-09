@@ -5,9 +5,7 @@ import org.jdom2.Element;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.IdentityHashMap;
-import java.util.List;
 
 public class Serializer {
 
@@ -19,18 +17,6 @@ public class Serializer {
 
         document = new Document();
         document.setRootElement(new Element("serialized"));
-
-//        Class cls = object.getClass();
-//        Class[] noparams = {};
-//        Method method = cls.getDeclaredMethod("size", noparams);
-//        Object size = method.invoke(object, (Object[]) null);
-
-//        for (int i = 0; i < Integer.parseInt(size.toString()); i++) {
-//            Method get = List.class.getDeclaredMethod("get", int.class);
-//            get.invoke(object, i);
-//            Object objectToSerialize = get.invoke(object, i);
-//            serObject(objectToSerialize);
-//        }
         serObject(object);
         return document;
     }
