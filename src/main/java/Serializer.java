@@ -17,6 +17,8 @@ public class Serializer {
         document = new Document();
         document.setRootElement(new Element("serialized"));
         serObject(object);
+        ihm.clear();
+        id=0;
         return document;
     }
 
